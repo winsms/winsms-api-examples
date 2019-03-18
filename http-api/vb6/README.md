@@ -16,32 +16,28 @@ Add 4 Text boxes called:
  Add a button
 
 ```vb.net
-    Function readHtmlPage(ByVal url As String) As String
-        readHtmlPage = Inet1.OpenURL(url)
-        If InStr(readHtmlPage , "(404)") Then
-          readHtmlPage = "URL: " & url & " not found."
-        End If
-    End Function
+Function readHtmlPage(ByVal url As String) As String
+	readHtmlPage = Inet1.OpenURL(url)
+	If InStr(readHtmlPage , "(404)") Then
+		readHtmlPage = "URL: " & url & " not found."
+	End If
+End Function
 ```
 
 ```vb.net
-    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As
-System.EventArgs) Handles Button1.Click
-        Dim MyString As String
-        Dim TxUserName As String
-        Dim TxPassword As String
-        Dim TxMessage As String
-        Dim TxNumber As String
-        TxUserName = TBUserName.Text
-        TxPassword = TBPassword.Text
-        TxMessage = TBMessage.Text
-        TxNumber = TBNumber.Text
-
-        MyString = "http://www.winsms.co.za/api/batchmessage.asp?User="
-        MyString = MyString & TxUserName & "&Password=" & TxPassword &
-"&Delivery=No"
-        MyString = MyString & "&Message=" & TxMessage & "&Numbers=" &
-TxNumber & ";"
-        MsgBox(readHtmlPage(MyString))
-    End Sub
+Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+	Dim MyString As String
+	Dim TxUserName As String
+	Dim TxPassword As String
+	Dim TxMessage As String
+	Dim TxNumber As String
+	TxUserName = TBUserName.Text
+	TxPassword = TBPassword.Text
+	TxMessage = TBMessage.Text
+	TxNumber = TBNumber.Text
+	MyString = "http://www.winsms.co.za/api/batchmessage.asp?User="
+	MyString = MyString & TxUserName & "&Password=" & TxPassword & "&Delivery=No"
+	MyString = MyString & "&Message=" & TxMessage & "&Numbers=" & TxNumber & ";"
+	MsgBox(readHtmlPage(MyString))
+End Sub
 ```
