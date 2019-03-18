@@ -8,12 +8,12 @@ Example code for accessing the WinSMS HTTP API using a VB6 application
 Add the Microsoft Internet Control to a form.
 Add 4 Text boxes called:
 
- TBUserName
- TBPassword
- TBMessage
- TBNumber
-
-Add a button
+ - TBUserName
+ - TBPassword
+ - TBMessage
+ - TBNumber
+ 
+ Add a button
 
 ```vb.net
     Function readHtmlPage(ByVal url As String) As String
