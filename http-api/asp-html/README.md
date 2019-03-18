@@ -33,7 +33,7 @@ Static HTML page with form inputs
 
 ## SamplePageSend.asp
 The server-side classic ASP script called by the form submit of *SamplePage.html*
-```vbscript
+```vb.net
 <%SendURL = "http://www.winsms.co.za/api/batchmessage.asp?user=MyLoginName&password=MyPassword&message=" & Request("Message")
 
 ' The following If - Then Statements can be replaced with a database lookup to determine the recipients Cell No based on Unique Identifier
