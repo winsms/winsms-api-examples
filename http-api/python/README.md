@@ -5,8 +5,9 @@ Example code for accessing the WinSMS HTTP API using Python 2 & 3
 
 ## Python 2
 > This sample code was kindly supplied by Piet Vermeulen (pietv@suidwes.co.za).
+> 
 > Piet is running a Raspberry Pi on which the code is implemented to send environmental sensor data to his cell.
-
+> 
 > Please note that the following code is supplied merely as an example of how to use Python with the WinSMS API. We do not support this code and we do not offer any Python development services.
 
 ```python
