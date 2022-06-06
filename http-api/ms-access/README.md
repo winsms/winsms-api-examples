@@ -23,7 +23,7 @@ Public Function URLEncode( _
 
   Do Until CurChr - 1 = Len(StringToEncode)
     Select Case Asc(Mid(StringToEncode, CurChr, 1))
-      Case 48 To 57, 65 To 90, 97 To 122
+      Case 48 To 58, 65 To 90, 97 To 122
         TempAns = TempAns & Mid(StringToEncode, CurChr, 1)
       Case 32
         If UsePlusRatherThanHexForSpace = True Then
