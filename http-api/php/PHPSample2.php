@@ -14,7 +14,7 @@
 $username = $password = $message = $numbers = "";
 
 // Define variables used in the URL
-$url = "https://www.winsms.co.za/api/batchmessage.asp?";
+$url = "https://api.winsms.co.za/api/batchmessage.asp?";
 
 $userp = "user=";
 
@@ -83,4 +83,5 @@ If the web server is behind a firewall or proxy server, you will have to open it
 ?>
 
 </body>
+
 </html>
