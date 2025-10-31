@@ -35,7 +35,7 @@ Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.Event
 	TxPassword = TBPassword.Text
 	TxMessage = TBMessage.Text
 	TxNumber = TBNumber.Text
-	MyString = "http://www.winsms.co.za/api/batchmessage.asp?User="
+	MyString = "http://api.winsms.co.za/api/batchmessage.asp?User="
 	MyString = MyString & TxUserName & "&Password=" & TxPassword & "&Delivery=No"
 	MyString = MyString & "&Message=" & TxMessage & "&Numbers=" & TxNumber & ";"
 	MsgBox(readHtmlPage(MyString))
